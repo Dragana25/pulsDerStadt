@@ -3,27 +3,115 @@ package com.example.paurevic.pulsderstadt;
 
 
         import android.app.Activity;
+        import android.content.Context;
+        import android.content.Intent;
         import android.os.Bundle;
+        import android.view.View;
+        import android.widget.Button;
         import android.widget.ImageView;
         import android.widget.TextView;
 
 public class CardViewActivity extends Activity {
 
-    TextView personName;
-    TextView personAge;
-    ImageView personPhoto;
+    View button, button2, button3;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.cardview_activity);
-        personName = (TextView)findViewById(R.id.person_name);
-        personAge = (TextView)findViewById(R.id.person_age);
-        personPhoto = (ImageView)findViewById(R.id.person_photo);
+        /*addListenerOnButton(View.inflate(null, R.layout.cardview_activity, null));
+        addListenerOnButton2(View.inflate(null, R.layout.cardview_activity, null));
+        addListenerOnButton3(View.inflate(null,R.layout.cardview_activity,null));*/
 
-        personName.setText("Emma Wilson");
-        personAge.setText("23 years old");
-        personPhoto.setImageResource(R.drawable.emma);
     }
+
+    public void addListenerOnButton(View v) {
+
+        final Context context = this;
+
+        button = (View) findViewById(R.id.cv);
+
+        button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(context, MainActivity.class);
+                startActivity(intent);
+
+            }
+
+
+        });
+
+        button2 = (View) findViewById(R.id.cv2);
+
+        button2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(context, MainActivity3.class);
+                startActivity(intent);
+
+            }
+
+        });
+
+        button3 = (View) findViewById(R.id.cv23);
+
+        button3.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(context, MainActivity2.class);
+                startActivity(intent);
+
+            }
+
+        });
+
+    }
+
+
+    public void addListenerOnButton2(View v) {
+
+        final Context context = this;
+
+        button = (View) findViewById(R.id.cv2);
+
+        button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(context, MainActivity.class);
+                startActivity(intent);
+
+            }
+
+        });
+    }
+
+    public void addListenerOnButton3(View v) {
+
+        final Context context = this;
+
+        button = (View) findViewById(R.id.cv23);
+
+        button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(context, MainActivity.class);
+                startActivity(intent);
+
+            }
+
+        });
+    }
+
+
 }

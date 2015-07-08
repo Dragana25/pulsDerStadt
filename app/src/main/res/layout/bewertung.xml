@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="161dp">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:src="@drawable/ago"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal" />
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/x">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="Atmosphäre"
+            android:textSize="23dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="Besuchermenge"
+            android:textSize="23dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText7"
+            android:layout_row="1"
+            android:layout_column="4"
+            android:text="0%" />
+        <SeekBar
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar4"
+            android:layout_row="1"
+            android:layout_column="5" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText8"
+            android:layout_row="1"
+            android:layout_column="6"
+            android:text="100%" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText5"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:text="0%" />
+        <SeekBar
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar3"
+            android:layout_row="0"
+            android:layout_column="5" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText6"
+            android:layout_row="0"
+            android:layout_column="6"
+            android:text="100%" />
+    </GridLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText3"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:text="Wartezeit"
+            android:textSize="23dp" />
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rating1"
+            android:layout_row="3"
+            android:layout_column="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text1"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:text="Bewertung.."
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:text="Service"
+            android:layout_marginTop="10dp"
+            android:textSize="23dp" />
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rating2"
+            android:layout_row="5"
+            android:layout_column="0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text2"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:text="Bewertung.."
+            android:textSize="20dp" />
+        <EditText
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText4"
+            android:background="@drawable/back"
+            android:text="Betreff"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+    <EditText
+        android:layout_width="343dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/editText9"
+        android:background="@drawable/back"
+        android:text="Kommentar"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="top" />
+</LinearLayout>
